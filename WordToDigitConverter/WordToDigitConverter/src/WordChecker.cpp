@@ -178,8 +178,9 @@ bool WordChecker::isNonAlpha() const
 
 bool WordChecker::isAnd()
 {
-	// and could be And, so it's better to transform all the string in upper or lower case
-	if (wordWithProperties.word.compare("and") == 0)
+	string word = toLowerCase(wordWithProperties.word);
+	
+	if (word.compare("and") == 0)
 		return true;
 
 	return false;
