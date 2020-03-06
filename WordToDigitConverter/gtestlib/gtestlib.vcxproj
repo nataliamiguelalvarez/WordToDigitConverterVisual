@@ -71,11 +71,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)googletest\include;$(SolutionDir)googletest;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(SolutionDir)googletest\include;$(SolutionDir)googletest;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
