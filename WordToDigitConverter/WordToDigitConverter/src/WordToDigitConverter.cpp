@@ -2,10 +2,14 @@
 //
 
 #include <iostream>
+#include "ParagraphParser.h"
 
-int main()
+int main(int argc, char** argv)
 {
-	return 0;
+	ParagraphParser parser;
+	string input(argv[1]);
+
+	cout << "The transformed text is: \n" << parser.transformText(input);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

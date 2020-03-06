@@ -167,7 +167,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\WordToDigitConverter\src\ParagraphParser.cpp" />
     <ClCompile Include="..\WordToDigitConverter\src\WordChecker.cpp" />
+    <ClCompile Include="src\ParagraphParserTest.cpp" />
     <ClCompile Include="src\WordCheckerTest.cpp" />
     <ClCompile Include="WordToDigitConverterTest.cpp" />
   </ItemGroup>

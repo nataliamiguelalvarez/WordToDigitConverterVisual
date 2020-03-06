@@ -225,3 +225,8 @@ TEST(WordChecker, hasNonAlphabethicalCharacter_givenAStringOnlyAnyNonAlphabetica
 {
 	EXPECT_TRUE(WordChecker::hasNonAlphabethicalCharacter("word.word-word"));
 }
+
+TEST(WordChecker, hasNonAlphabethicalCharacter_givenAStringWithAHyphen_thenItHasOnlyAlphaNumericCharacter)
+{
+	EXPECT_FALSE(WordChecker::hasNonAlphabethicalCharacter("word-word"));
+}

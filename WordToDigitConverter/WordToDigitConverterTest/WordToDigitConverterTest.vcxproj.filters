@@ -10,6 +10,12 @@
     <ClCompile Include="src\WordCheckerTest.cpp">
       <Filter>Test Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\WordToDigitConverter\src\ParagraphParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParagraphParserTest.cpp">
+      <Filter>Test Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

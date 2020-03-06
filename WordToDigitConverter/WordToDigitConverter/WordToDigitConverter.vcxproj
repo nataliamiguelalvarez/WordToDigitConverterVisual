@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\ParagraphParser.cpp" />
     <ClCompile Include="src\WordChecker.cpp" />
     <ClCompile Include="src\WordToDigitConverter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\ParagraphParser.h" />
     <ClInclude Include="include\WordChecker.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

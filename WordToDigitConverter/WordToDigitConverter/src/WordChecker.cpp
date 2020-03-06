@@ -148,7 +148,7 @@ bool WordChecker::hasNonAlphabethicalCharacter(string word)
 	{
 		char c = word.at(i - word.begin());
 
-		if (!isalnum(c))
+		if (!isalnum(c) && (c != '-'))
 		{
 			return true;
 		}
