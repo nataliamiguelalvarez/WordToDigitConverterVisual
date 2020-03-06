@@ -16,7 +16,6 @@ vector<string> ParagraphParser::splitText(const string& consoleText)
 
 	while (consoleTextStream >> textWord)
 	{
-		// Si tengo caracter raro, lo pongo en una nueva posición del vector
 		if (WordChecker::hasNonAlphabethicalCharacter(textWord))
 		{
  			string tempWord("");
